@@ -12,7 +12,7 @@ public class NavegarHaciaPIM implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                WaitUntil.the(TXT_PIM, isVisible()).forNoMoreThan(10).seconds(),
+                WaitUntil.the(TXT_PIM, isVisible()).forNoMoreThan(20).seconds(),
                 Click.on(TXT_PIM)
         );
     }
